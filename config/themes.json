@@ -1,0 +1,22 @@
+{
+    "chosenTheme": 2,
+    "themes": [
+        {
+        "backgroundId": 3,
+
+        "transparentish": "#11529cf6",
+        "lightText": "#00000000",
+        "darkText": "#00000000",
+        "mediumText": "#00000000",
+
+        "primary1": "#00000000",
+        "primary2": "#00000000",
+
+        "accent1": "#00000000",
+        "accent2": "#00000000"
+        },
+        {
+            "color1": "#123123"
+        }
+    ]
+}

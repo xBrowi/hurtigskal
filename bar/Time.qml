@@ -7,14 +7,16 @@ import QtQuick
 Singleton {
     id: root
     property string time
+    property string date
+    property string weekday
 
     Process {
         id: dateProc
-        command: ["date", "+%H:%M:%S"]
+        command: ["date", "+%H:%M:%S  %d/%m"]
         running: true
 
         stdout: StdioCollector {
-            onStreamFinished: root.time = this.text
+            onStreamFinished: root.time = this.text.trim()
         }
     }
 

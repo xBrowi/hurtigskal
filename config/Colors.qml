@@ -3,6 +3,11 @@ pragma Singleton
 import Quickshell
 import QtQuick
 
+// int chosenTheme: themes.json chosenTheme
+
+
 Singleton {
-    property color color1: '#db1a540e'
+    //read themes.json
+
+    property color transparentish: "#11529cf6"
 } 

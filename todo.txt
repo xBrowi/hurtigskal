@@ -1,0 +1,23 @@
+bar
+    battery
+        toggleable
+    system tray
+    system monitor?
+    workspace widget
+    wifi
+
+background/theme picker
+
+launcher
+
+session/power menu
+
+music
+
+indicators
+    keyboard layout
+    idle inhibitor
+    updates
+
+task manager
+
