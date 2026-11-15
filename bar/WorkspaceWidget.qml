@@ -10,19 +10,14 @@ Rectangle {
     radius: height/3
 
     height: parent.height
-    implicitWidth: child.implicitWidth * 1.15
+    implicitWidth: workspaces.implicitWidth * 1.15
 
 
-    Text {
-        id: child
-        anchors.centerIn: parent
-        color: "white"
-
-        text: Hyprland.focusedWorkspace.id
-    }
+    //text: Hyprland.focusedWorkspace.id
 
     RowLayout {
         id: workspaces
+        anchors.centerIn: parent
 
         Repeater {
             model: Hyprland.workspaces
@@ -30,7 +25,7 @@ Rectangle {
                 required property var modelData
                 text: modelData.id
 
-                color: "white"
+                color: Hyprland.focusedWorkspace.id === modelData.id ? Config.theme.lightText : Config.theme.mediumText
 
             }
         }

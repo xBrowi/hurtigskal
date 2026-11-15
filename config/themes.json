@@ -1,14 +1,14 @@
 {
-    "chosenTheme": 1,
+    "chosenTheme": 0,
 
     "themes": [
         {
             "backgroundId": 0,
 
             "transparentish":   "#11529cf6",
-            "lightText":        "#fdffff",
-            "darkText":         "#50FFFFFF",
-            "mediumText":       "#50FFFFFF",
+            "lightText":        "#7affff",
+            "darkText":         "rgb(0, 72, 72)",
+            "mediumText":       "rgb(53, 157, 157)",
 
             "primary1":         "#FF00F0FF",
             "primary2":         "#50FFFFFF",
@@ -21,9 +21,9 @@
             "backgroundId": 1,
 
             "transparentish":   "#11529cf6",
-            "lightText":        "#50000000",
-            "darkText":         "#50000000",
-            "mediumText":       "#50000000",
+            "lightText":        "#ffa382",
+            "darkText":         "#500000",
+            "mediumText":       "#b04242",
 
             "primary1":         "#FF055A00",
             "primary2":         "#50000000",

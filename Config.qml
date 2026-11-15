@@ -23,7 +23,7 @@ Singleton {
             id: themeAdapter
             property int chosenTheme: 1
             onChosenThemeChanged: {
-                console.log(chosenTheme)
+                console.log("chosenTheme: " + chosenTheme)
             }
             property var themes: []
             

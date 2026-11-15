@@ -22,7 +22,7 @@ Scope {
                 right: true
             }
 
-            color: Config.theme.primary1
+            color: Config.theme.transparentish
             implicitHeight: Config.bar.barHeight
             BackgroundEffect.blurRegion: Region { item: root.contentItem }
             margins {
@@ -42,11 +42,11 @@ Scope {
                 }
 
                 Text {
-                    text: "HVID"
-                    color: Config.theme.primary1
+                    text: "LYS TEXT"
+                    color: Config.theme.lightText
                 }
 
-                WorkspaceWidget {id: workspace}
+                
 
             }
 
@@ -54,10 +54,7 @@ Scope {
                 id: middleLayout
                 anchors.centerIn: parent
 
-                Text {
-                    text: "centre"
-                    color: "white"
-                }
+                WorkspaceWidget {id: workspace}
             }
 
             RowLayout {
