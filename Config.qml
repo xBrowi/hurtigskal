@@ -15,7 +15,7 @@ Singleton {
 
     FileView {
         id: themes
-        path: "config/themes.json"
+        path: Qt.resolvedUrl("config/themes.json")
         watchChanges: true
         onFileChanged: reload()
 
@@ -34,7 +34,7 @@ Singleton {
 
     FileView {
         id: bar
-        path: "config/bar.json"
+        path: Qt.resolvedUrl("config/bar.json")
         watchChanges: true
         onFileChanged: reload()
 
