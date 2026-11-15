@@ -4,6 +4,8 @@ import QtQuick
 import QtQuick.Layouts
 
 Rectangle {
+
+
     color: 'black'
     radius: height/3
 
@@ -32,8 +34,8 @@ Rectangle {
         Text {
             Layout.rightMargin: 8
 
-            //text: Battery.percentage + "%"
-            text: "1%"
+            text: Battery.percentage + "%"
+            //text: "1%"
             color: "white"
             font.pointSize: parent.height / 2
 

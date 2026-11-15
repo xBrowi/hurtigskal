@@ -1,22 +1,36 @@
 {
-    "chosenTheme": 2,
+    "chosenTheme": 1,
+
     "themes": [
         {
-        "backgroundId": 3,
+            "backgroundId": 0,
 
-        "transparentish": "#11529cf6",
-        "lightText": "#00000000",
-        "darkText": "#00000000",
-        "mediumText": "#00000000",
+            "transparentish":   "#11529cf6",
+            "lightText":        "#fdffff",
+            "darkText":         "#50FFFFFF",
+            "mediumText":       "#50FFFFFF",
 
-        "primary1": "#00000000",
-        "primary2": "#00000000",
+            "primary1":         "#FF00F0FF",
+            "primary2":         "#50FFFFFF",
+            "primary3":         "#50FFFFFF",
 
-        "accent1": "#00000000",
-        "accent2": "#00000000"
+            "accent1":          "#50FFFFFF",
+            "accent2":          "#50FFFFFF"
         },
         {
-            "color1": "#123123"
+            "backgroundId": 1,
+
+            "transparentish":   "#11529cf6",
+            "lightText":        "#50000000",
+            "darkText":         "#50000000",
+            "mediumText":       "#50000000",
+
+            "primary1":         "#FF055A00",
+            "primary2":         "#50000000",
+            "primary3":         "#50000000",
+
+            "accent1":          "#50000000",
+            "accent2":          "#50000000"
         }
     ]
 }

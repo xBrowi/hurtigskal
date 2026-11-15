@@ -2,7 +2,7 @@ import Quickshell // for PanelWindow
 import QtQuick // for Text
 import QtQuick.Layouts
 import Quickshell.Wayland
-import "../config"
+import ".."
 
 
 
@@ -22,13 +22,13 @@ Scope {
                 right: true
             }
 
-            color: Colors.transparentish
-            implicitHeight: BarConfig.barHeight
+            color: Config.theme.primary1
+            implicitHeight: Config.bar.barHeight
             BackgroundEffect.blurRegion: Region { item: root.contentItem }
             margins {
-                left: BarConfig.margin
-                right: BarConfig.margin
-                top: BarConfig.margin
+                left: Config.bar.margin
+                right: Config.bar.margin
+                top: Config.bar.margin
             }
 
 
@@ -42,9 +42,12 @@ Scope {
                 }
 
                 Text {
-                    text: "left"
-                    color: "white"
+                    text: "HVID"
+                    color: Config.theme.primary1
                 }
+
+                WorkspaceWidget {id: workspace}
+
             }
 
             RowLayout {
@@ -66,6 +69,7 @@ Scope {
                 }
 
                 BatteryWidget {
+                    visible: Battery.batteryPowered
                     id: battery
                 }
 
