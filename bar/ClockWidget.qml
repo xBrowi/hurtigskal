@@ -5,8 +5,7 @@ import QtQuick
 Rectangle {
     color: 'black'
     radius: height/3
-
-    height: parent.height
+    
     implicitWidth: child.implicitWidth * 1.15
     
 
@@ -16,6 +15,6 @@ Rectangle {
         
         text: Time.time
         color: "white"
-        font.pointSize: parent.height / 2
+        font.pointSize: Math.max(1, parent.height / 2)
     }
 }

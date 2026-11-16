@@ -65,13 +65,20 @@ Scope {
                     bottom: parent.bottom
                 }
 
+                AudioWidget{
+                    id: audio
+                    Layout.fillHeight: true
+                }
+
                 BatteryWidget {
                     visible: Battery.batteryPowered
                     id: battery
+                    Layout.fillHeight: true
                 }
 
                 ClockWidget {
                     id: clock
+                    Layout.fillHeight: true
                 }
             }
         }

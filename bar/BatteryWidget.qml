@@ -8,9 +8,7 @@ Rectangle {
 
     color: 'black'
     radius: height/3
-
-    height: parent.height
-    implicitWidth: layout.implicitWidth * 1
+    implicitWidth: layout.implicitWidth * 1.15
     
     
     RowLayout {
@@ -20,13 +18,12 @@ Rectangle {
 
         Text {
             Layout.leftMargin: 8
-
             text: "battery_android_full"
             color: "white"
             font {
                 family: "Material Symbols Rounded"
             }
-            font.pointSize: parent.height / 2
+            font.pointSize: Math.max(1, parent.height / 2)
 
             
         }
@@ -37,7 +34,7 @@ Rectangle {
             text: Battery.percentage + "%"
             //text: "1%"
             color: "white"
-            font.pointSize: parent.height / 2
+            font.pointSize: Math.max(1, parent.height / 2)
 
 
             Layout.minimumWidth: font.pointSize*3.5
