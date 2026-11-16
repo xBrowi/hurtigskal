@@ -8,5 +8,5 @@ import ".."
 
 Text {
     color: Config.theme.lightText
-    text: Network.connectedDevice ? Network.connectedDevice.name : "Disconnected"
+    text: Network.connectedNetwork ? Network.connectedNetwork.name : "Disconnected"
 }
