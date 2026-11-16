@@ -21,64 +21,72 @@ Scope {
                 left: true
                 right: true
             }
-
-            color: Config.theme.transparentish
-            implicitHeight: Config.bar.barHeight
-            BackgroundEffect.blurRegion: Region { item: root.contentItem }
             margins {
                 left: Config.bar.margin
                 right: Config.bar.margin
                 top: Config.bar.margin
             }
+            implicitHeight: Config.bar.barHeight
+            BackgroundEffect.blurRegion: Region { item: root.contentItem }
+            color: "transparent"
 
-
-
-
-            RowLayout {
-                id: leftLayout
-                anchors {
-                    left: parent.left
-                    verticalCenter: parent.verticalCenter
-                }
-
-                Text {
-                    text: "LYS TEXT"
-                    color: Config.theme.lightText
-                }
-
+            Rectangle {
+                id: background
+                color: Config.theme.transparentish
+                anchors.fill: parent
+                implicitHeight: Config.bar.barHeight
+                radius: height/2
                 
 
-            }
 
-            RowLayout {
-                id: middleLayout
-                anchors.centerIn: parent
 
-                WorkspaceWidget {id: workspace}
-            }
 
-            RowLayout {
-                id: rightLayout
-                anchors {
-                    right: parent.right
-                    top: parent.top
-                    bottom: parent.bottom
+                RowLayout {
+                    id: leftLayout
+                    anchors {
+                        left: parent.left
+                        verticalCenter: parent.verticalCenter
+                    }
+
+                    Text {
+                        text: "LYS TEXT"
+                        color: Config.theme.lightText
+                    }
+
+                    
+
                 }
 
-                AudioWidget{
-                    id: audio
-                    Layout.fillHeight: true
+                RowLayout {
+                    id: middleLayout
+                    anchors.centerIn: parent
+
+                    WorkspaceWidget {id: workspace}
                 }
 
-                BatteryWidget {
-                    visible: Battery.batteryPowered
-                    id: battery
-                    Layout.fillHeight: true
-                }
+                RowLayout {
+                    id: rightLayout
+                    anchors {
+                        right: parent.right
+                        top: parent.top
+                        bottom: parent.bottom
+                    }
 
-                ClockWidget {
-                    id: clock
-                    Layout.fillHeight: true
+                    AudioWidget{
+                        id: audio
+                        Layout.fillHeight: true
+                    }
+
+                    BatteryWidget {
+                        visible: Battery.batteryPowered
+                        id: battery
+                        Layout.fillHeight: true
+                    }
+
+                    ClockWidget {
+                        id: clock
+                        Layout.fillHeight: true
+                    }
                 }
             }
         }

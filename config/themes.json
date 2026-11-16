@@ -5,7 +5,7 @@
         {
             "backgroundId": 0,
 
-            "transparentish":   "#b33fd6db",
+            "transparentish":   "#63b221de",
             "lightText":        "#7affff",
             "darkText":         "rgb(0, 72, 72)",
             "mediumText":       "rgb(53, 157, 157)",
@@ -20,7 +20,7 @@
         {
             "backgroundId": 1,
 
-            "transparentish":   "#11529cf6",
+            "transparentish":   "#11529c80",
             "lightText":        "#ffa382",
             "darkText":         "#500000",
             "mediumText":       "#b04242",

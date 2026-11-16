@@ -8,13 +8,13 @@ Rectangle {
 
     color: 'black'
     radius: height/3
-    implicitWidth: layout.implicitWidth * 1.15
+    implicitWidth: layout.implicitWidth
     
     
     RowLayout {
         id: layout
         height: parent.height
-        spacing: 0
+        spacing: 5
 
         Text {
             Layout.leftMargin: 8
@@ -31,13 +31,13 @@ Rectangle {
         Text {
             Layout.rightMargin: 8
 
-            text: Battery.percentage + "%"
-            //text: "1%"
+            //text: Battery.percentage + "%"
+            text: "100%"
             color: "white"
             font.pointSize: Math.max(1, parent.height / 2)
 
 
-            Layout.minimumWidth: font.pointSize*3.5
+            Layout.minimumWidth: font.pointSize*3
             horizontalAlignment: Text.AlignRight
         }
     }
