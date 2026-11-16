@@ -2,6 +2,7 @@ import Quickshell
 import Quickshell.Widgets
 import QtQuick
 import QtQuick.Layouts
+import ".."
 
 Rectangle {
     color: 'black'
@@ -12,28 +13,28 @@ Rectangle {
     RowLayout {
         id: layout
         height: parent.height
-        spacing: 0
+        spacing: -height/3
         anchors.fill: parent
 
         Text {
             id: audioIcon
-            Layout.leftMargin: 8
+            Layout.leftMargin: parent.height*0.25
             text: "volume_up"
-            color: "white"
+            color: Config.theme.lightText
             font {
                 family: "Material Symbols Rounded"
             }
-            font.pointSize: Math.max(1, parent.height / 2)
+            font.pointSize: Math.max(1, parent.height * 0.50)
         }
 
         Text {
             id: audioText
-            Layout.rightMargin: 8
+            Layout.rightMargin: parent.height*0.25
             
             
             text: Audio.volume
-            color: "white"
-            font.pointSize: Math.max(1, parent.height / 2)
+            color: Config.theme.lightText
+            font.pointSize: Math.max(1, parent.height * 0.50)
             Layout.minimumWidth: font.pointSize*3
             horizontalAlignment: Text.AlignRight
         } 

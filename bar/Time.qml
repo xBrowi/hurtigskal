@@ -12,11 +12,14 @@ Singleton {
 
     Process {
         id: dateProc
-        command: ["date", "+%H:%M:%S  %d/%m"]
+        command: ["date", "+%H:%M:%S,%d/%m"]
         running: true
 
         stdout: StdioCollector {
-            onStreamFinished: root.time = this.text.trim()
+            onStreamFinished: {
+                root.time = this.text.trim().split(',')[0]
+                root.date = this.text.trim().split(',')[1]
+            }
         }
     }
 

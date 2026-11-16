@@ -5,32 +5,32 @@
         {
             "backgroundId": 0,
 
-            "transparentish":   "#63b221de",
-            "lightText":        "#7affff",
-            "darkText":         "rgb(0, 72, 72)",
-            "mediumText":       "rgb(53, 157, 157)",
+            "transparentish":   "#2b820027",
+            "lightText":        "#d5e588",
+            "darkText":         "#544c2d",
+            "mediumText":       "#485f11",
 
-            "primary1":         "#FF00F0FF",
-            "primary2":         "#50FFFFFF",
-            "primary3":         "#50FFFFFF",
+            "primary1":         "#ffb13d",
+            "primary2":         "#a84242",
+            "primary3":         "#501f1f",
 
             "accent1":          "#50FFFFFF",
-            "accent2":          "#50FFFFFF"
+            "accent2":          "#ff252500"
         },
         {
             "backgroundId": 1,
 
-            "transparentish":   "#11529c80",
-            "lightText":        "#ffa382",
-            "darkText":         "#500000",
-            "mediumText":       "#b04242",
+            "transparentish":   "#2c3b4b9a",
+            "lightText":        "#d7d2e4",
+            "darkText":         "#500000ff",
+            "mediumText":       "#a5a5e9",
 
-            "primary1":         "#FF055A00",
-            "primary2":         "#50000000",
-            "primary3":         "#50000000",
+            "primary1":         "#4e537a",
+            "primary2":         "#0d454c",
+            "primary3":         "#151e59",
 
-            "accent1":          "#50000000",
-            "accent2":          "#50000000"
+            "accent1":          "#8f3624",
+            "accent2":          "#872400"
         }
     ]
 }

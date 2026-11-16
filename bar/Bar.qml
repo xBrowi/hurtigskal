@@ -45,23 +45,31 @@ Scope {
                     id: leftLayout
                     anchors {
                         left: parent.left
-                        verticalCenter: parent.verticalCenter
+                        top: parent.top
+                        bottom: parent.bottom
                     }
 
                     Text {
                         text: "LYS TEXT"
                         color: Config.theme.lightText
+                        font.pointSize: parent.height / 2
                     }
 
                     
-
                 }
 
                 RowLayout {
                     id: middleLayout
-                    anchors.centerIn: parent
+                    anchors {
+                        horizontalCenter: parent.horizontalCenter
+                        top: parent.top
+                        bottom: parent.bottom
+                    }
 
-                    WorkspaceWidget {id: workspace}
+                    WorkspaceWidget {
+                        id: workspace
+                        Layout.fillHeight: true
+                    }
                 }
 
                 RowLayout {
@@ -70,6 +78,11 @@ Scope {
                         right: parent.right
                         top: parent.top
                         bottom: parent.bottom
+                    }
+
+                    NetworkWidget{
+                        id: network
+                        Layout.fillHeight: true
                     }
 
                     AudioWidget{

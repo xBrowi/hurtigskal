@@ -7,30 +7,36 @@ import Quickshell.Io
 import ".."
 
 Rectangle {
-    color: 'black'
+    color: Config.theme.primary3
     radius: height/3
 
-    height: parent.height
     implicitWidth: workspaces.implicitWidth * 1.15
-
-
-    //text: Hyprland.focusedWorkspace.id
-
+    
     RowLayout {
         id: workspaces
         anchors.centerIn: parent
 
         Repeater {
             model: Hyprland.workspaces
-            Text {
+
+            Rectangle {
+                id: rect
                 required property var modelData
-                text: modelData.id
+                color: Hyprland.focusedWorkspace.id === rect.modelData.id ? Config.theme.primary2 : "transparent"
+                radius: height/2
+                implicitHeight:parent.parent.height*0.85
+                implicitWidth: height
 
-                color: Hyprland.focusedWorkspace.id === modelData.id ? Config.theme.lightText : Config.theme.mediumText
-
+                Text {
+                    id:workspaceText
+                    anchors.centerIn: parent
+                    text: rect.modelData.id
+                    font.pointSize: Math.max(1,parent.height/2)
+                    horizontalAlignment: Text.AlignHCenter
+                    color: Hyprland.focusedWorkspace.id === rect.modelData.id ? Config.theme.lightText : Config.theme.mediumText
+                }
             }
         }
-
 
     }
 
