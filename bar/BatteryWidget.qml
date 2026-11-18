@@ -31,13 +31,13 @@ Rectangle {
         Text {
             Layout.rightMargin: 8
 
-            //text: Battery.percentage + "%"
-            text: "100%"
+            text: Battery.percentage + "%"
+            //text: "100%"
             color: "white"
             font.pointSize: Math.max(1, parent.height / 2)
 
 
-            Layout.minimumWidth: font.pointSize*3
+            Layout.minimumWidth: font.pointSize*3.8
             horizontalAlignment: Text.AlignRight
         }
     }
