@@ -19,7 +19,6 @@ Rectangle {
         onClicked: mouse => {
             if (mouse.button === Qt.LeftButton) {
                 dø.running = true
-                console.log("jegErDød")
             } 
         }
     }
