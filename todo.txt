@@ -1,13 +1,12 @@
 bar
-    system tray
     system monitor?
-    workspace widget
-    networks
+    //workspace widget
+    //networks
     
-    color picker
-    background/theme picker
-        theme creator?
-    music
+    #color picker
+    //background/theme picker
+        #theme creator?
+    #music
 
 launcher
 
@@ -15,12 +14,15 @@ session/power menu
 
 
 indicators
-    keyboard layout
-    idle inhibitor
+    #keyboard layout
+    #idle inhibitor
     updates
 
-task manager
+#task manager
 
 
-nuke x1.15
-4 er 1 pixel bredere???
+
+
+"jeg keder mig hvad kan jeg lige fikse"
+    4 er 1 pixel bredere???
+    

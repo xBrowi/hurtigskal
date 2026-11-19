@@ -46,10 +46,9 @@ Scope {
                         bottom: parent.bottom
                     }
 
-                    Text {
-                        text: "LYS TEXT"
-                        color: Config.theme.lightText
-                        font.pointSize: Math.max(parent.height / 2,1)
+                    SelfDestruct {
+                        id: dø
+                        Layout.fillHeight: true
                     }
 
                     

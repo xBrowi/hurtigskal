@@ -2,11 +2,12 @@ import Quickshell
 import Quickshell.Widgets
 import QtQuick
 import QtQuick.Layouts
+import ".."
 
 Rectangle {
 
 
-    color: 'black'
+    color: Config.theme.primary3
     radius: height/3
     implicitWidth: layout.implicitWidth
     
