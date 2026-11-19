@@ -5,20 +5,19 @@ import QtQuick.Layouts
 import ".."
 
 Rectangle {
-    color: 'black'
+    color: Config.theme.primary3
     radius: height/3
     
-    implicitWidth: layout.implicitWidth
+    implicitWidth: layout.implicitWidth + height * 0.5
     
     RowLayout {
         id: layout
         height: parent.height
         spacing: -height/3
-        anchors.fill: parent
+        anchors.centerIn: parent
 
         Text {
             id: audioIcon
-            Layout.leftMargin: parent.height*0.25
             text: "volume_up"
             color: Config.theme.lightText
             font {
@@ -29,10 +28,10 @@ Rectangle {
 
         Text {
             id: audioText
-            Layout.rightMargin: parent.height*0.25
             
             
             text: Audio.volume
+            //text: "100"
             color: Config.theme.lightText
             font.pointSize: Math.max(1, parent.height * 0.50)
             Layout.minimumWidth: font.pointSize*3

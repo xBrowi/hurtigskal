@@ -4,7 +4,7 @@ import QtQuick
 import ".."
 
 Rectangle {
-    color: 'black'
+    color: Config.theme.primary3
     radius: height/3
     
     implicitWidth: clockText.implicitWidth + height*0.5

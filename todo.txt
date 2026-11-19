@@ -1,21 +1,18 @@
 bar
-    battery
-        toggleable
     system tray
     system monitor?
     workspace widget
     networks
-    color picker
     
-
-background/theme picker
-    theme creator?
+    color picker
+    background/theme picker
+        theme creator?
+    music
 
 launcher
 
 session/power menu
 
-music
 
 indicators
     keyboard layout
@@ -23,3 +20,7 @@ indicators
     updates
 
 task manager
+
+
+nuke x1.15
+4 er 1 pixel bredere???

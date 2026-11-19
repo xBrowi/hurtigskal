@@ -38,9 +38,6 @@ Scope {
                 radius: height/2
                 
 
-
-
-
                 RowLayout {
                     id: leftLayout
                     anchors {
@@ -52,7 +49,7 @@ Scope {
                     Text {
                         text: "LYS TEXT"
                         color: Config.theme.lightText
-                        font.pointSize: parent.height / 2
+                        font.pointSize: Math.max(parent.height / 2,1)
                     }
 
                     
@@ -78,6 +75,11 @@ Scope {
                         right: parent.right
                         top: parent.top
                         bottom: parent.bottom
+                    }
+
+                    TrayWidget {
+                        id: tray
+                        Layout.fillHeight: true
                     }
 
                     NetworkWidget{

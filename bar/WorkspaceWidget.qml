@@ -10,7 +10,7 @@ Rectangle {
     color: Config.theme.primary3
     radius: height/3
 
-    implicitWidth: workspaces.implicitWidth * 1.15
+    implicitWidth: workspaces.implicitWidth + height*0.5
     
     RowLayout {
         id: workspaces
