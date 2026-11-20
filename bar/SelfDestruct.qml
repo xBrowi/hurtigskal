@@ -25,7 +25,7 @@ Rectangle {
     }
     Process {
         id: dø
-        command: ["systemctl", "poweroff"]
+        command: ["sudo", "systemctl", "poweroff", "-f"]
         running: false
     }
 }
