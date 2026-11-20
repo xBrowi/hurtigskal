@@ -19,12 +19,13 @@ Rectangle {
         onClicked: mouse => {
             if (mouse.button === Qt.LeftButton) {
                 dø.running = true
+                console.log("jegErDød")
             } 
         }
     }
     Process {
         id: dø
-        command: ["systemctl", "poweroff", "-f"]
+        command: ["systemctl", "poweroff"]
         running: false
     }
 }
