@@ -17,6 +17,7 @@ Rectangle {
         height: parent.height
         spacing: 5
 
+        //reagerer langsomt lige nu, inkl. at batteryPowered bliver false inden charging bliver true. overvej at sætte manuel updater på?
         Text {
             Layout.leftMargin: 8
             property int icon_id: Math.round(Battery.percentage*(7/100))
