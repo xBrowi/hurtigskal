@@ -19,7 +19,9 @@ Rectangle {
 
         Text {
             Layout.leftMargin: 8
-            text: "battery_android_full"
+            property int icon_id: Math.round(Battery.percentage*(7/100))
+             
+            text: Battery.charging ? "battery_android_frame_bolt" : (icon_id == 7 ? "battery_android_frame_full" : "battery_android_frame_" + icon_id)
             color: Config.theme.lightText
             font {
                 family: "Material Symbols Rounded"
