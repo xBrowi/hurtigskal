@@ -92,7 +92,7 @@ Scope {
                     }
 
                     BatteryWidget {
-                        visible: Battery.batteryPowered
+                        visible: Battery.batteryPowered || Battery.charging
                         id: battery
                         Layout.fillHeight: true
                     }

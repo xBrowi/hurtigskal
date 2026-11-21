@@ -20,7 +20,7 @@ Rectangle {
         Text {
             Layout.leftMargin: 8
             text: "battery_android_full"
-            color: "white"
+            color: Config.theme.lightText
             font {
                 family: "Material Symbols Rounded"
             }
@@ -34,7 +34,7 @@ Rectangle {
 
             text: Battery.percentage + "%"
             //text: "100%"
-            color: "white"
+            color: Config.theme.lightText
             font.pointSize: Math.max(1, parent.height / 2)
 
 
