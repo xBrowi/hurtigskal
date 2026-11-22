@@ -15,7 +15,7 @@ Rectangle {
         anchors.centerIn: parent
 
 
-        text: Updates.updateCount
+        text: Updates.updateCount + " updates"
         color: Config.theme.lightText
         font.pointSize: Math.max(1, parent.height / 2)
     }

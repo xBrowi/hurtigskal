@@ -7,11 +7,22 @@ import Quickshell.Io
 import ".."
 
 Rectangle {
+    id: root
+    color: Config.theme.primary3
+    radius: height/3
+    
+    implicitWidth: døText.implicitWidth + height*0.5
     WrapperMouseArea {
+        anchors.centerIn: root
 
         Text {
-            text: "dø"
+            id: døText
+            text: "power_settings_new"
+            font {
+                family: "Material Symbols Rounded"
+            }
             color: Config.theme.lightText
+            font.pointSize: Math.max(1, root.height / 2)
         }
 
 

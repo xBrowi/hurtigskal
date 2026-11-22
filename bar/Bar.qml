@@ -2,6 +2,7 @@ import Quickshell // for PanelWindow
 import QtQuick // for Text
 import QtQuick.Layouts
 import Quickshell.Wayland
+import Quickshell.Services.SystemTray
 import ".."
 
 
@@ -51,6 +52,12 @@ Scope {
                         Layout.fillHeight: true
                     }
 
+                    UpdatesWidget {
+                        visible: Updates.updateCount > 0
+                        id: updates
+                        Layout.fillHeight: true
+                    }
+
                     
                 }
 
@@ -77,6 +84,7 @@ Scope {
                     }
 
                     TrayWidget {
+                        visible: SystemTray.items.values.length > 0
                         id: tray
                         Layout.fillHeight: true
                     }

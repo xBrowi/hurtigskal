@@ -2,6 +2,7 @@ bar
     system monitor?
     //workspace widget
     //networks
+    //icons for everything
     
     #color picker
     //background/theme picker
