@@ -58,6 +58,10 @@ Scope {
                         Layout.fillHeight: true
                     }
 
+                    SystemMonitorWidget {
+                        id: systemMonitor
+                        Layout.fillHeight: true
+                    }
                     
                 }
 
