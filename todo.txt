@@ -1,5 +1,8 @@
 bar
     system monitor?
+    mute indicator
+    charging indicator
+    battery level icon
     //workspace widget
     //networks
     //icons for everything
